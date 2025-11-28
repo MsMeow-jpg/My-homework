@@ -24,7 +24,7 @@
 
 ## Структура проекту
 
-/project-root
+/project-root<br>
 │
 ├── index.html # Головна сторінка
 ├── style.css # Файл стилів
