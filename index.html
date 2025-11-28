@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Selector Specificity Example</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1>Selector Specificity Example</h1>
+<div>
+    <p>Застосовується до тегів p, вкладених у div, на першому рівні, вага 0.0.0.2</p>
+</div>
+
+<div>
+    <p class="info">Застосовується до тегів p з класом info, які є прямими нащадками div, вага 0.0.1.2</p>
+</div>
+
+<div id="main">
+    Застосовується до елемента з id="main", вага 0.1.0.0
+</div>
+
+<div>
+    <p data-type="special">Застосовується до тегів p з атрибутом data-type="special", які є прямими нащадками div, вага 0.0.1.2</p>
+</div>
+
+<section>
+    <div>
+        <p class="highlight">Застосовується до тегу p з класом highlight, який є прямою дитиною div, що знаходиться всередині section, вага 0.0.1.3</p>
+    </div>
+</section>
+
+<div>
+    <p></p>
+    <p>Цей абзац є прямим дочірнім елементом div, вага 0.0.0.2</p>
+</div>
+
+<div class="content">
+    <section>
+        <p class="highlighted">Застосовується до тегів p з класом highlighted, які вкладені у section, що знаходиться всередині div з класом content, вага 0.0.2.3</p>
+    </section>
+</div>
+
+<div id="container">
+    <ul class="menu">
+        <li class="item selected">Застосовується до тегів li з класами item і selected, які є прямими нащадками ul з класом menu, всередині div з id container, вага 0.1.3.3</li>
+    </ul>
+</div>
+
+<div id="wrapper">
+    <p class="note" data-important="true">Застосовується до тегів p з класом note і атрибутом data-important="true", які знаходяться всередині div з id wrapper, вага 0.1.2.2</p>
+</div>
+
+<p>Застосовується до всіх тегів p, вага 0.0.0.1</p>
+
+</body>
+</html>

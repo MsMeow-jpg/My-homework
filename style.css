@@ -1,0 +1,42 @@
+
+p {
+    background-color: #d9d9d9;
+}
+div > p {
+    background-color: rgb(17, 0, 255);
+}
+
+div > p.info {
+    background-color: rgb(233, 175, 16);
+}
+
+#main {
+    background-color: rgb(96, 28, 169);
+}
+
+div > p[data-type="special"] {
+    background-color: rgb(43, 255, 0);
+}
+
+section div > p.highlight {
+    color: rgb(0, 225, 255);
+    background-color: transparent;
+}
+
+div > p:nth-of-type(2) {
+    background-color: #a0a0a0; 
+}
+div.content section > p.highlighted {
+    color: rgb(153, 0, 255);
+    background-color: transparent;
+}
+
+div#container ul.menu > li.item.selected {
+    background-color: rgb(17, 0, 250);
+    color: white;
+}
+
+div#wrapper p.note[data-important="true"] {
+    color: rgb(0, 153, 255);
+    background-color: transparent;
+}
