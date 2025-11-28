@@ -1,6 +1,6 @@
 
 p {
-    background-color: rgb(62, 210, 91);
+    background-color: rgb(68, 134, 82);
 }
 div > p {
     background-color: rgb(62, 210, 91);
@@ -37,6 +37,8 @@ div#container ul.menu > li.item.selected {
 }
 
 div#wrapper p.note[data-important="true"] {
-    color: rgb(0, 153, 255);
+    color: rgb(15, 69, 105);
     background-color: transparent;
 }
+
+h1,h2{color:darkred}
