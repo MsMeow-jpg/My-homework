@@ -26,7 +26,7 @@
 
 /project-root<br>
 │
-├── index.html # Головна сторінка
-├── style.css # Файл стилів
-└── pages/
+├── index.html # Головна сторінка<br>
+├── style.css # Файл стилів<br>
+└── pages/ <br>
 └── newfolder.html # Додаткова сторінка в папці pages
